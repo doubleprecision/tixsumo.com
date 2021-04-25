@@ -86,25 +86,18 @@
       opacity: 0.5;
     }
 
-    .product-list {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+    .product-container {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       margin-top: 4rem;
       padding: 1rem;
-    }
-
-    .product-list > * + * {
-      margin-right: 0;
-      margin-left: 1rem;
     }
 
     .product-item {
       border-radius: 8px;
       border: 1px solid #dadce0;
       padding: 2rem;
-      height: 5rem;
-      flex: 1 1 0;
       font-size: 1.5rem;
       text-align: center;
       display: flex;
@@ -122,9 +115,9 @@
   </head>
   <body>
     <main class="content">
-      <h1>Welcome to TixSumo</h1>
-      <h2>We are building ticketing platforms, PDF editors & QR code generators</h2>
-      <section class="product-list">
+      <h1>Welcome to TixSumo!</h1>
+      <h2>We are building ticketing platforms, PDF editors & QR code generators.</h2>
+      <section class="product-container">
         <a class="product-item" href="https://pdf.tixsumo.com" target="_blank">
           PDF mail merger
         </a>
